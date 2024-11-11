@@ -820,15 +820,8 @@
     margin-top: 1rem;
 }
 
-.learn-more-btn {
-    font-size: 1rem;
-    text-decoration: none;
-    background-color: #096eb6;
-    color: white;
-    padding: 0.7rem;
-    border-radius: 20px;
-    width: 120px;
-    text-align: center;
+#learn-more-btn {
+   margin-bottom:1rem;
 }
 
 /* Responsive layout for .action-row on smaller screens */
