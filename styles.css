@@ -1,0 +1,1052 @@
+.main {
+    background-color: rgba(205, 205, 206, 0.242);
+    padding-bottom: 3rem;
+}
+
+
+/*-------------------------- home serch bar-------------------------------------------- */
+
+.worksiy-home-search-section {
+    background: linear-gradient(to right, #0033cc, #6699ff);
+    padding: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.worksiy-home-search-container {
+    width: 100%;
+}
+
+.worksiy-home-search-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3vw;
+}
+
+.worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.worksiy-home-search-col-md-8 {
+    display: flex;
+    justify-content: center;
+}
+
+.worksiy-home-search-search-bar {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px 15px;
+    flex-wrap: wrap; 
+}
+
+/* Input group styling */
+.worksiy-home-search-input-group {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #ddd;
+    gap: 0.5rem;
+}
+
+.worksiy-home-search-input-group:last-child {
+    border-right: none;
+}
+
+.worksiy-home-search-form-select,
+.worksiy-home-search-form-control {
+    border: none;
+    box-shadow: none;
+    color: #666;
+    font-size: 16px;
+    outline: none;
+}
+
+.worksiy-home-search-input-group-text {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    margin-left: 1rem;
+}
+
+/* Search button styling */
+.worksiy-home-search-btn-search {
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #0033cc;
+    color: #fff;
+    border: none;
+    margin-left: 1rem;
+}
+
+.worksiy-home-search-btn-search:hover {
+    background-color: #002299;
+}
+
+/* Desktop and mobile specific visibility */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .worksiy-home-search-section {
+        padding: 30px;
+    }
+
+    .worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .worksiy-home-search-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .worksiy-home-search-search-bar {
+        padding: 8px 12px;
+        flex-direction: row; /* Align elements horizontally */
+        flex-wrap: nowrap;   /* Prevent wrapping */
+        gap: 0.5rem;
+    }
+
+    .worksiy-home-search-input-group {
+        border-right: none;
+        padding: 5px;
+        flex: 1;
+    }
+
+    .worksiy-home-search-btn-search {
+        width: auto; /* Keep button in line with inputs */
+        padding: 8px 20px;
+        font-size: 14px;
+        margin: 0; /* Remove left margin for mobile */
+    }
+}
+
+@media (max-width: 580px) {
+    .worksiy-home-search-input-group-text {
+        display: none;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+        /* width: 100%; */
+        font-size: 14px;
+        color: #666;
+    }
+
+    .worksiy-home-search-search-bar {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .worksiy-home-search-section {
+        padding: 20px;
+    }
+
+    .worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
+        font-size: 1rem;
+    }
+
+    .worksiy-home-search-row {
+        gap: 0.5rem;
+    }
+
+    /* Inline styling for button and inputs */
+    .worksiy-home-search-search-bar,
+    .worksiy-home-search-btn-search {
+        display: flex;
+        align-items: center;
+    }
+
+    .worksiy-home-search-input-group {
+        border-right: none;
+        padding: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .worksiy-home-search-btn-search {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* --------------------------Find the perfect job for YOU----------------------------- */
+
+
+/* General container for centering content */
+.perfect-job-for-you-category-container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title Styling */
+  .perfect-job-for-you-category-container h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 30px;
+  }
+  
+  /* Flexbox for card items (single row) */
+  .perfect-job-for-you-category-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Reduced gap for better spacing */
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  /* Individual Category Card */
+  .perfect-job-for-you-category-card {
+    width: 250px; /* Smaller width for compact design */
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Hover effect and card styling */
+  .perfect-job-for-you-category-card:hover {
+    box-shadow: 0px 8px 20px rgba(182, 178, 178, 0.3);
+  }
+  
+  /* Content inside the card (icon and title) */
+  .perfect-job-for-you-card-content {
+    height: 100px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .perfect-job-for-you-card-content i {
+    font-size: 2.5rem; /* Slightly smaller icon size */
+    padding: 10px;
+    border-radius: 50%;
+    background-color: inherit; /* Ensures icon background matches category color */
+  }
+  
+  .perfect-job-for-you-card-content h6 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Background style for the card */
+  .perfect-job-for-you-background-style {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    padding: 1rem;
+    z-index: -1;
+  }
+  
+  /* Circle styling for the background */
+  .perfect-job-for-you-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Custom Colors */
+  .perfect-job-for-you-remote { background-color: rgb(223, 223, 241); }
+  .perfect-job-for-you-freelance { background-color: rgb(237, 234, 227); }
+  .perfect-job-for-you-full-time { background-color: rgb(229, 215, 217); }
+  .perfect-job-for-you-part-time { background-color: rgb(222, 235, 222); }
+  .perfect-job-for-you-work-from-home { background-color: rgb(225, 241, 234); }
+  
+  .perfect-job-for-you-remote-text { color: purple; }
+  .perfect-job-for-you-freelance-text { color: rgb(249, 107, 56); }
+  .perfect-job-for-you-full-time-text { color: orangered; }
+  .perfect-job-for-you-part-time-text { color: rgb(25, 101, 25); }
+  .perfect-job-for-you-work-from-home-text { color: rgb(11, 206, 236); }
+  
+  /* Circle Color Matching */
+  /* .perfect-job-for-you-remote-circle { background-color: rgb(231, 231, 248); }
+  .perfect-job-for-you-freelance-circle { background-color: rgb(244, 234, 217); }
+  .perfect-job-for-you-full-time-circle { background-color: rgb(253, 225, 230); }
+  .perfect-job-for-you-part-time-circle { background-color: rgb(216, 249, 216); }
+  .perfect-job-for-you-work-from-home-circle { background-color: rgb(212, 246, 230); }
+   */
+  /* Fancy Icon Styling */
+  .perfect-job-for-you-remote-icon {
+    background-color: rgb(231, 231, 248);
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: purple;
+  }
+  
+  .perfect-job-for-you-work-from-home-icon {
+    background-color: rgb(212, 246, 230);
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: rgb(5, 89, 102);
+  }
+
+  @media(max-width:586px){
+    .perfect-job-for-you-category-cards{
+        flex-direction: column;
+    }
+
+      /* Title Styling */
+      .perfect-job-for-you-category-container h4 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 22px;
+      }
+  }
+
+
+
+/* ===============================popular categories========================================= */
+
+.popularcategories-category-card {
+    background-color: white;
+    border: 1px solid #dfdddd;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #333;
+    /* Dark text for better visibility */
+}
+
+.popularcategories-category-card:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    /* Add slight lift on hover */
+    background-color: #f8f9fa;
+    /* Bright background on hover */
+}
+
+.popularcategories-icon-wrapper {
+    width: 45px;
+    /* Slightly larger icon wrapper */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.popularcategories-category-title {
+    font-size: 14px;
+    /* Slightly larger font */
+    font-weight: 500;
+    /* Medium weight for better visibility */
+    margin: 0;
+    color: #222;
+    /* Darker text */
+}
+
+
+/* ----------------------------Jobs by Location----------------------- */
+
+.hiring-companies-based-carousel-container {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    scrollbar-width: none;
+}
+
+.hiring-companies-based-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.hiring-companies-based-carousel-card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    width: 10rem;   
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hiring-companies-based-company-logo {
+    max-width:80px;
+    max-height:100px;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+
+.hiring-companies-based-company-name {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color:rgba(230, 223, 214, 0.523);
+    /* text-transform: uppercase; */
+}
+/* .hiring-companies-based-review-info {
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.hiring-companies-based-review-data {
+    font-size: 10px;
+    font-weight: 700;
+} */
+
+.hiring-companies-based-custom-scroll-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.hiring-companies-based-scroll-track {
+    /* position: absolute; */
+    height: 4px;
+    width: 100%;
+    top: 19.8rem;
+    background: #c4bcbc;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.hiring-companies-based-scroll-thumb {
+    position: absolute;
+    height: 4px;
+    width: 500px;
+    background: rgb(0, 0, 253);
+    border-radius: 10px;
+}
+
+.top-hirings-cat-all-jobs {
+    background-color: rgba(165, 165, 214, 0.546);
+    color: rgb(0, 0, 0);
+    width: 8rem;
+    padding: 8px 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 1200px) {
+    .hiring-companies-based-carousel-card {
+      flex: 0 0 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hiring-companies-based-carousel-card {
+      flex: 0 0 150px;
+    }
+  
+    .hiring-companies-based-custom-scroll-container {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-container{
+        margin-left:0.7rem;
+    }
+    .hiring-companies-based-carousel-card {
+      flex: 0 0 120px;
+    }
+  
+    .hiring-companies-based-company-name {
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+
+
+
+
+/* <!------- CSS of -->> Latest jobs on Workisy , full time,freelance,parttime,workfrom home -------> */
+
+.container {
+    width: 100%;
+    max-width: 80rem;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.category-button {
+    margin: 0.5rem;
+    scrollbar-width: none;
+}
+
+.category-button:hover{
+    background-color:rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-scrollbar {
+    width: 300px;
+    background-color: #ddd;
+    height: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-scrollbar div {
+    width: 30px;
+    background-color: blue;
+    height: 5px;
+    border-radius: 20px;
+    transition: all ease-out;
+    position: absolute;
+}
+
+.card {
+    border: 1px solid #cfcfcf;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    flex-shrink: 0;
+    transform: scale(.95);
+    transition: transform .2s, box-shadow .2s;
+    margin-right: 1rem;
+}
+
+.card:hover {
+    transform: scale(.96);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-card {
+    margin:10px;
+    border: none;
+}
+
+.skills .badge {
+    margin-right: 0.5rem;
+}
+
+.job-info {
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+}
+
+.job-info i {
+    margin-right: 0.5rem;
+}
+
+.salary-info {
+    font-size: 0.9rem;
+}
+
+.salary-info span {
+    color: #6c757d;
+}
+@media (max-width:576px) {
+    .card {
+        width:90vw;
+    }
+
+    .buttons-of-latest-on-workisy{
+      margin-left:3vw;
+    }
+    
+    .category-button {
+        margin: 0%;
+        margin-top:1.5vw;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+
+/* Find Job Vacancies By------------------------------------------------------------------------ */
+
+
+
+.nav-tabs .nav-link {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    color: gray;
+    transition: color 0.3s, 0.3s;
+}
+
+
+.nav-tabs .nav-link:hover {
+    color: rgb(247, 247, 247);
+    background-color: rgb(0, 123, 255);
+}
+
+
+.nav-tabs .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 123, 255);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+
+.tab-link {
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    font-family: "Inter", sans-serif;
+    border-radius: 20px;
+    padding: 0.6rem;
+    font-size: 12px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.tab-link:hover {
+    background-color: rgb(24, 121, 24);
+    color: white;
+    text-decoration: none;
+    /* Ensure no underline on hover */
+}
+
+.view-all-btn {
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+    border: 1px solid rgb(0, 123, 255);
+    padding: 0.5rem;
+    border-radius: 20px;
+    /* width: 8rem; */
+    font-size: 13px;
+    text-align: center;
+    font-weight: 200;
+    font-family: "Inter", sans-serif;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.view-all-btn:hover {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    text-decoration: none;
+}
+
+.tab-content {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-top: 1.5rem;
+}
+
+.heading-job-vacancies {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* Accelerate your job search with premium services---------------------------------------------------------- */
+
+
+.premium-section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgb(204, 204, 204);
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.premium-image {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+}
+
+.services-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#service-btn-1 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 20px;
+    padding: 0.1rem 0.8rem ;
+    width: auto;
+    justify-content: center;
+}
+
+#service-btn-1 .icon {
+    font-size: 0.9rem;
+    color: #096eb6;
+}
+
+
+    
+.text-center-small {
+    font-size: 0.7rem;
+    color: rgb(65, 64, 64);
+    /* margin-left: 60.5rem; */
+}
+
+.action-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the far right */
+    margin-top: 1rem;
+}
+
+#learn-more-btn {
+    background-color: #096eb6;
+    color: white;
+    font-size:1rem;
+}
+
+.text-center-small {
+    font-size: 0.7rem;
+    color: rgb(65, 64, 64);
+    margin-top: 0.5rem; 
+    text-align: center !important;  
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .d-flex-1 {
+        flex-direction: column;
+    }
+    .premium-image {
+        margin-left:4rem ; 
+    }
+}
+
+.services-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.service-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 20px;
+    padding: 0.3rem;
+    width: auto;
+    justify-content: center;
+}
+
+.service-btn .icon {
+    font-size: 0.9rem;
+    color: #096eb6;
+}
+
+.action-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the far right */
+    margin-top: 1rem;
+}
+
+.learn-more-btn {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #096eb6;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+}
+
+/* Responsive layout for .action-row on smaller screens */
+@media (max-width: 768px) {
+   
+    .action-row {
+        align-items: center; /* Center align items for smaller screens */
+    }
+    .learn-more-btn {
+        margin-top: 1rem; /* Adjust spacing above button */
+    }
+}
+
+.text-center-small {
+    font-size: 0.7rem;
+    color: rgb(65, 64, 64);
+    margin-top: 0.5rem;
+    text-align: center;  
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+
+    .learn-more-btn {
+        width: 100%; /* Full width button on very small screens */
+    }
+}
+
+
+
+
+/* footer css */
+
+
+#footer {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Main Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: white;
+    width: 100%;
+}
+
+.company {
+    max-width: 200px;
+    flex: 1 1 200px;
+}
+
+.company h6 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.company ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.company ul li {
+    font-size: 0.9rem;
+}
+
+/* Social Media Icons */
+.follow-us {
+    text-align: center;
+}
+
+.icon-btn {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.icon-btn:hover {
+    background-color: rgb(23, 23, 174);
+    color: white;
+}
+
+.icon-btn i {
+    font-size: 1.2rem;
+}
+
+.app-store img {
+    width: 150px;
+    height: 100px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Logos */
+.business-logos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.business-logos p {
+    font-size: 1rem;
+    border-right: 1px solid gray;
+    padding-right: 1rem;
+}
+
+.logos-container {
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.logo-img {
+    width: 100px;
+    height: 40px;
+    animation: moveImages 2s linear infinite;
+}
+
+/* Logo Section */
+.footer-logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo .logo {
+    width: 150px;
+    height: 50px;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+/* Keyframe Animation for Moving Logos */
+@keyframes moveImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .business-logos {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logos-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon-btn i {
+        font-size: 1rem;
+    }
+
+    .company h6 {
+        font-size: 1rem;
+    }
+
+    .company ul li {
+        font-size: 0.8rem;
+    }
+
+    .app-store img {
+        width: 120px;
+        height: 80px;
+    }
+
+    .logo-img {
+        width: 80px;
+        height: 30px;
+    }
+
+    .footer-logo .logo {
+        width: 120px;
+        height: 40px;
+    }
+}
