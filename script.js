@@ -153,3 +153,48 @@ carouselContainer.addEventListener("scroll", updateScrollThumb);
 
 // Initial call to position the scroll thumb correctly
 updateScrollThumb();
+
+
+
+// --------------Jobs by location----------------
+
+function scrollCarouselLocation(direction) {
+  const container = document.getElementById('carouselContainer');
+  const scrollAmount = 200; 
+
+  if (direction === 'left') {
+    container.scrollLeft -= scrollAmount;
+  } else if (direction === 'right') {
+    container.scrollLeft += scrollAmount;
+  }
+}
+
+
+
+
+// <!-- Latest jobs  Workisy start--------------------------------------------------------- -->
+
+
+
+function scrollCarousel(direction,section) {
+  // Get the container of the carousel cards based on the section
+  const container = document.getElementById(`cards-container-${section}`);
+  
+  // Get the width of a single card
+  const cardWidth = container.querySelector('.card').offsetWidth;
+  
+  // Set the scroll amount based on direction
+  if (direction === 'left') {
+    container.scrollBy({
+      left: -cardWidth,
+      behavior: 'smooth'
+    });
+  } else if (direction === 'right') {
+    container.scrollBy({
+      left: cardWidth,
+      behavior: 'smooth'
+    });
+  }
+}
+
+
